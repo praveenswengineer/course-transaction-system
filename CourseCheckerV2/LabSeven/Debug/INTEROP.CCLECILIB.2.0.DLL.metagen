@@ -1,0 +1,445 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly Interop.CclECILib.2.0, Version=2.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Struct CclECILib.CclFlowSyncTypes: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    CclECILib.CclFlowSyncTypes cclSync = 0 : Public, Static, Literal, HasDefault
+    CclECILib.CclFlowSyncTypes cclDSync = 1 : Public, Static, Literal, HasDefault
+Struct CclECILib.CclFlowCallTypes: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    CclECILib.CclFlowCallTypes cclInactive = 0 : Public, Static, Literal, HasDefault
+    CclECILib.CclFlowCallTypes cclLink = 1 : Public, Static, Literal, HasDefault
+    CclECILib.CclFlowCallTypes cclBackout = 2 : Public, Static, Literal, HasDefault
+    CclECILib.CclFlowCallTypes cclCommit = 3 : Public, Static, Literal, HasDefault
+    CclECILib.CclFlowCallTypes cclStatus = 4 : Public, Static, Literal, HasDefault
+    CclECILib.CclFlowCallTypes cclChanged = 5 : Public, Static, Literal, HasDefault
+    CclECILib.CclFlowCallTypes cclCancel = 6 : Public, Static, Literal, HasDefault
+Struct CclECILib.CclConnectStatusCodes: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    CclECILib.CclConnectStatusCodes cclUnknown = 0 : Public, Static, Literal, HasDefault
+    CclECILib.CclConnectStatusCodes cclAvailable = 1 : Public, Static, Literal, HasDefault
+    CclECILib.CclConnectStatusCodes cclUnavailable = 2 : Public, Static, Literal, HasDefault
+Struct CclECILib.CclECIExceptionCodes: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    CclECILib.CclECIExceptionCodes cclNoError = 0 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclBufferOverflow = 1 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclMultipleInstance = 2 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclActiveFlow = 3 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclActiveUOW = 4 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclSyncType = 5 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclThreadCreate = 6 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclThreadWait = 7 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclThreadKill = 8 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclDataLength = 9 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclNoCICS = 10 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclCICSDied = 11 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclNoReply = 12 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclTransaction = 13 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclSystemError = 14 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclResource = 15 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclMaxUOWs = 16 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclUnknownServer = 17 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclSecurity = 18 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclMaxServers = 19 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclMaxRequests = 20 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclRolledBack = 21 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclParameter = 22 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclInvalidState = 23 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclTransId = 24 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclInitEPI = 25 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclConnect = 26 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclDatastream = 27 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclInvalidMap = 28 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclClass = 29 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclStartTranFailure = 30 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclTimeout = 31 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclNoPassword = 32 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclNoUserid = 33 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclNullNewPassword = 34 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclPemNotSupported = 35 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclPemNotActive = 36 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclPasswordExpired = 37 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclPasswordInvalid = 38 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclPasswordRejected = 39 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclUseridInvalid = 40 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclInvalidTermid = 41 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclInvalidModelid = 42 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclNot3270 = 43 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclInvalidCCSid = 44 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclServerBusy = 45 : Public, Static, Literal, HasDefault
+    CclECILib.CclECIExceptionCodes cclSignonNotPossible = 46 : Public, Static, Literal, HasDefault
+Interface CclECILib.CclBuffer: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    SetString(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    String(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Length(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AppendString(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExtractString(Int16, Object(Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    InsertString(Int16, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetLength(Int16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Overlay(Int16, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetData(Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Data(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface CclECILib.ICclBufferDual: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    SetString(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    String(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Length(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AppendString(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExtractString(Int16(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    InsertString(Int16(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetLength(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Overlay(Int16(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetData(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Data(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class CclECILib.CclOBufClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    CclECILib.ICclBufferDual
+    CclECILib.CclOBuf
+    CclECILib.CclBuffer
+  Methods:
+    SetString(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    String(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Length(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AppendString(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ExtractString(Int16(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    InsertString(Int16(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetLength(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Overlay(Int16(In), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetData(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Data(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclBuffer_SetString(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclBuffer_String(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclBuffer_Length(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclBuffer_AppendString(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclBuffer_ExtractString(Int16, Object(Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclBuffer_InsertString(Int16, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclBuffer_SetLength(Int16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclBuffer_Overlay(Int16, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclBuffer_SetData(Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclBuffer_Data(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface CclECILib.CclOBuf: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    CclECILib.ICclBufferDual
+Interface CclECILib.cclConnect: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    Details(String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Link(Object(HasFieldMarshal), String(HasFieldMarshal), Object(HasFieldMarshal), Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TranDetails(String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UserId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ServerName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Cancel(Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Changed(Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Status(Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ServerStatusText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ServerStatus(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    password(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    VerifyPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ChangePassword(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AlterSecurity(String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MakeSecurityDefault(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UnpaddedPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UnpaddedUserId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UnpaddedServerName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface CclECILib.ICclConnectDual: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    Details(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Link(Object(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TranDetails(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UserId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ServerName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Cancel(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Changed(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Status(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ServerStatusText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ServerStatus(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    password(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    VerifyPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ChangePassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AlterSecurity(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MakeSecurityDefault(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UnpaddedPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UnpaddedUserId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UnpaddedServerName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class CclECILib.CclOConnClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    CclECILib.ICclConnectDual
+    CclECILib.CclOConn
+    CclECILib.cclConnect
+  Methods:
+    Details(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Link(Object(In, HasFieldMarshal), String(In, HasFieldMarshal), Object(In, HasFieldMarshal), Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    TranDetails(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    UserId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ServerName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Cancel(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Changed(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Status(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ServerStatusText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ServerStatus(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    password(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    VerifyPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ChangePassword(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AlterSecurity(String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MakeSecurityDefault(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    UnpaddedPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    UnpaddedUserId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    UnpaddedServerName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cclConnect_Details(String(HasFieldMarshal), String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cclConnect_Link(Object(HasFieldMarshal), String(HasFieldMarshal), Object(HasFieldMarshal), Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cclConnect_TranDetails(String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cclConnect_UserId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cclConnect_ServerName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cclConnect_Cancel(Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cclConnect_Changed(Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cclConnect_Status(Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cclConnect_ServerStatusText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cclConnect_ServerStatus(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cclConnect_password(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cclConnect_VerifyPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cclConnect_ChangePassword(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cclConnect_AlterSecurity(String(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cclConnect_MakeSecurityDefault(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cclConnect_UnpaddedPassword(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cclConnect_UnpaddedUserId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    cclConnect_UnpaddedServerName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface CclECILib.CclOConn: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    CclECILib.ICclConnectDual
+Interface CclECILib.CclECI: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    ServerCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ServerName(Int16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ServerDesc(Int16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExCode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExCodeText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ErrorWindow(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetErrorFormat(Int16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ErrorFormat(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ErrorOffset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface CclECILib.ICclECIDual: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    ServerCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ServerName(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ServerDesc(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExCode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExCodeText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ErrorWindow(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetErrorFormat(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ErrorFormat(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ErrorOffset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class CclECILib.CclOECIClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    CclECILib.ICclECIDual
+    CclECILib.CclOECI
+    CclECILib.CclECI
+  Methods:
+    ServerCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ServerName(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ServerDesc(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ExCode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ExCodeText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ErrorWindow(Boolean(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetErrorFormat(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ErrorFormat(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ErrorOffset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclECI_ServerCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclECI_ServerName(Int16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclECI_ServerDesc(Int16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclECI_ExCode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclECI_ExCodeText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ErrorWindow(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclECI_SetErrorFormat(Int16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclECI_ErrorFormat(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclECI_ErrorOffset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface CclECILib.CclOECI: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    CclECILib.ICclECIDual
+Interface CclECILib.CclFlow: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    SetSyncType(CclFlowSyncTypes): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Poll(Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Wait(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AbendCode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    syncType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ForceReset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FlowId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Diagnose(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CallType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CallTypeText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Timeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetTimeout(Int16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface CclECILib.ICclFlowDual: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    SetSyncType(CclFlowSyncTypes(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Poll(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Wait(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AbendCode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    syncType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ForceReset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FlowId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Diagnose(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CallType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CallTypeText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Timeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetTimeout(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class CclECILib.CclOFlowClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    CclECILib.ICclFlowDual
+    CclECILib.CclOFlow
+    CclECILib.CclFlow
+  Methods:
+    SetSyncType(CclFlowSyncTypes(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Poll(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Wait(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AbendCode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    syncType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ForceReset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FlowId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Diagnose(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CallType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CallTypeText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Timeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetTimeout(Int16(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclFlow_SetSyncType(CclFlowSyncTypes): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclFlow_Poll(Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclFlow_Wait(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclFlow_AbendCode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclFlow_syncType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclFlow_ForceReset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclFlow_FlowId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclFlow_Diagnose(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclFlow_CallType(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclFlow_CallTypeText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclFlow_Timeout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclFlow_SetTimeout(Int16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface CclECILib.CclOFlow: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    CclECILib.ICclFlowDual
+Interface CclECILib.CclUOW: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    Backout(Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Commit(Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UowId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ForceReset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface CclECILib.ICclUOWDual: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    Backout(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Commit(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UowId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ForceReset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class CclECILib.CclOUOWClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    CclECILib.ICclUOWDual
+    CclECILib.CclOUOW
+    CclECILib.CclUOW
+  Methods:
+    Backout(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Commit(Object(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    UowId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ForceReset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclUOW_Backout(Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclUOW_Commit(Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclUOW_UowId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclUOW_ForceReset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface CclECILib.CclOUOW: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    CclECILib.ICclUOWDual
+Interface CclECILib.CclSecAttr: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    LastVerifiedTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    LastAccessTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExpiryTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    InvalidCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface CclECILib.ICclSecAttrDual: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    LastVerifiedTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    LastAccessTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExpiryTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    InvalidCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class CclECILib.CclOSecAttrClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    CclECILib.ICclSecAttrDual
+    CclECILib.CclOSecAttr
+    CclECILib.CclSecAttr
+  Methods:
+    LastVerifiedTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LastAccessTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ExpiryTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    InvalidCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclSecAttr_LastVerifiedTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclSecAttr_LastAccessTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclSecAttr_ExpiryTime(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclSecAttr_InvalidCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface CclECILib.CclOSecAttr: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    CclECILib.ICclSecAttrDual
+Interface CclECILib.CclSecTime: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    Year(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Month(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Day(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Hours(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Minutes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Seconds(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Hundredths(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    getDate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface CclECILib.ICclSecTimeDual: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    Year(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Month(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Day(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Hours(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Minutes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Seconds(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Hundredths(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    getDate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class CclECILib.CclOSecTimeClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    CclECILib.ICclSecTimeDual
+    CclECILib.CclOSecTime
+    CclECILib.CclSecTime
+  Methods:
+    Year(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Month(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Day(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Hours(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Minutes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Seconds(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Hundredths(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    getDate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclSecTime_Year(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclSecTime_Month(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclSecTime_Day(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclSecTime_Hours(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclSecTime_Minutes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclSecTime_Seconds(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclSecTime_Hundredths(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CclSecTime_getDate(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface CclECILib.CclOSecTime: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    CclECILib.ICclSecTimeDual

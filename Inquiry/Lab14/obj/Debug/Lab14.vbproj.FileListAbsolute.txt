@@ -1,0 +1,12 @@
+D:\Users\Mike\Documents\Work\Durham College\Winter 2015\CICS6205\Lab14\Lab14\bin\Debug\Lab14.exe.config
+D:\Users\Mike\Documents\Work\Durham College\Winter 2015\CICS6205\Lab14\Lab14\bin\Debug\Lab14.exe
+D:\Users\Mike\Documents\Work\Durham College\Winter 2015\CICS6205\Lab14\Lab14\bin\Debug\Lab14.pdb
+D:\Users\Mike\Documents\Work\Durham College\Winter 2015\CICS6205\Lab14\Lab14\bin\Debug\Lab14.xml
+D:\Users\Mike\Documents\Work\Durham College\Winter 2015\CICS6205\Lab14\Lab14\obj\Debug\Lab14.frmInquiry.resources
+D:\Users\Mike\Documents\Work\Durham College\Winter 2015\CICS6205\Lab14\Lab14\obj\Debug\Lab14.Resources.resources
+D:\Users\Mike\Documents\Work\Durham College\Winter 2015\CICS6205\Lab14\Lab14\obj\Debug\Lab14.vbproj.GenerateResource.Cache
+D:\Users\Mike\Documents\Work\Durham College\Winter 2015\CICS6205\Lab14\Lab14\obj\Debug\Lab14.exe
+D:\Users\Mike\Documents\Work\Durham College\Winter 2015\CICS6205\Lab14\Lab14\obj\Debug\Lab14.xml
+D:\Users\Mike\Documents\Work\Durham College\Winter 2015\CICS6205\Lab14\Lab14\obj\Debug\Lab14.pdb
+D:\Users\Mike\Documents\Work\Durham College\Winter 2015\CICS6205\Lab14\Lab14\obj\Debug\Interop.CclEPILib.dll
+D:\Users\Mike\Documents\Work\Durham College\Winter 2015\CICS6205\Lab14\Lab14\obj\Debug\Lab14.vbproj.ResolveComReference.cache

@@ -1,0 +1,18 @@
+﻿Build started 12/5/2014 12:41:22 PM.
+     1>Project "C:\Users\mikevaldron\Documents\Work\Durham College\Fall 2014\CICS5205\LabSeven\LabSeven\LabSeven.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.0\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr:pure /nologo /W3 /WX- /O2 /Oy- /D WIN32 /D NDEBUG /D _UNICODE /D UNICODE /EHa /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\LabSeven.pch" /Fo"Release\\" /Fd"Release\vc110.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /FUInterop\Interop.CclECILib.2.0.dll /analyze- /errorReport:prompt /clr:nostdlib LabSeven.cpp
+         LabSeven.cpp
+     1>c:\users\mikevaldron\documents\work\durham college\fall 2014\cics5205\labseven\labseven\StringFunctions.h(39): warning C4101: 'ex' : unreferenced local variable
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\mikevaldron\Documents\Work\Durham College\Fall 2014\CICS5205\LabSeven\Release\LabSeven.exe" /INCREMENTAL:NO /NOLOGO /ASSEMBLYRESOURCE:Release\LabSeven.frmCourseChecker.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\mikevaldron\Documents\Work\Durham College\Fall 2014\CICS5205\LabSeven\Release\LabSeven.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /ENTRY:"main" /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 /SAFESEH Release\app.res
+         Release\AssemblyInfo.obj
+         Release\LabSeven.obj
+         Release\stdafx.obj
+         "Release\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         LabSeven.vcxproj -> C:\Users\mikevaldron\Documents\Work\Durham College\Fall 2014\CICS5205\LabSeven\Release\LabSeven.exe
+     1>Done Building Project "C:\Users\mikevaldron\Documents\Work\Durham College\Fall 2014\CICS5205\LabSeven\LabSeven\LabSeven.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.63

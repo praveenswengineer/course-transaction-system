@@ -1,0 +1,59 @@
+MVMAP3  DFHMSD TYPE=MAP,TIOAPFX=YES,MODE=INOUT,LANG=COBOL,             *
+               STORAGE=AUTO,CTRL=FREEKB,TERM=3270-2,                   *
+               MAPATTS=(COLOR,HILIGHT),DSATTS=(COLOR,HILIGHT)
+BWSMAP  DFHMDI SIZE=(24,80),MAPATTS=(COLOR,HILIGHT),                   *
+               DSATTS=(COLOR,HILIGHT)
+*
+        DFHMDF POS=(2,4),ATTRB=(ASKIP,BRT),LENGTH=7,                   *
+               INITIAL='MICHAEL'
+        DFHMDF POS=(3,4),ATTRB=(ASKIP,BRT),LENGTH=7,                   *
+               INITIAL='VALDRON'
+*
+*  Inquiry screen title text
+MTITLE  DFHMDF POS=(2,18),ATTRB=(ASKIP,BRT),LENGTH=40,                 *
+               INITIAL='S E A R C H  B Y  S T U D E N T  N A M E'
+UTITLE  DFHMDF POS=(3,18),ATTRB=(ASKIP,BRT),LENGTH=40,                 *
+               INITIAL='========================================'
+*
+* Body content - Search for student records
+        DFHMDF POS=(4,20),ATTRB=ASKIP,LENGTH=19,                       *
+               INITIAL='NAME TO SEARCH BY: '
+STUNAM  DFHMDF POS=(4,40),ATTRB=(UNPROT,FSET,IC),LENGTH=20
+        DFHMDF POS=(4,61),ATTRB=ASKIP,LENGTH=1
+*
+        DFHMDF POS=(6,17),ATTRB=ASKIP,LENGTH=9,                        *
+               INITIAL='STUDENT #'
+        DFHMDF POS=(7,17),ATTRB=ASKIP,LENGTH=9,                        *
+               INITIAL='---------'
+*
+        DFHMDF POS=(6,32),ATTRB=ASKIP,LENGTH=12,                       *
+               INITIAL='STUDENT NAME'
+        DFHMDF POS=(7,32),ATTRB=ASKIP,LENGTH=12,                       *
+               INITIAL='------------'
+*
+        DFHMDF POS=(6,55),ATTRB=ASKIP,LENGTH=7,                        *
+               INITIAL='PHONE #'
+        DFHMDF POS=(7,55),ATTRB=ASKIP,LENGTH=7,                        *
+               INITIAL='-------'
+*
+RCLINE  DFHMDF POS=(8,1),LENGTH=79,OCCURS=10,ATTRB=(ASKIP,FSET)               
+*
+        DFHMDF POS=(18,21),ATTRB=(ASKIP,BRT),LENGTH=26,                *
+               INITIAL='TRANSFER TO RECORD NUMBER:'
+RECNUM  DFHMDF POS=(18,48),ATTRB=(ASKIP,FSET),LENGTH=2
+        DFHMDF POS=(18,51),ATTRB=ASKIP,LENGTH=1
+* Output result
+OUTMSG  DFHMDF POS=(20,20),ATTRB=(ASKIP,BRT),LENGTH=40
+        DFHMDF POS=(23,20),ATTRB=ASKIP,LENGTH=19,                      *
+               INITIAL='F8 - SCROLL FORWARD'
+        DFHMDF POS=(23,43),ATTRB=ASKIP,LENGTH=16,                      *
+               INITIAL='F7 - SCROLL BACK'
+        DFHMDF POS=(24,10),ATTRB=ASKIP,LENGTH=19,                      *
+               INITIAL='F2 - FOR NEW SEARCH'
+        DFHMDF POS=(24,33),ATTRB=ASKIP,LENGTH=19,                      *
+               INITIAL='F4 - RETURN TO MENU'
+        DFHMDF POS=(24,57),ATTRB=ASKIP,LENGTH=17,                      *
+               INITIAL='F9 - EXIT PROGRAM'
+*
+        DFHMSD TYPE=FINAL
+        END 

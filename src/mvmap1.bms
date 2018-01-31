@@ -1,0 +1,39 @@
+MVMAP1  DFHMSD TYPE=MAP,TIOAPFX=YES,MODE=INOUT,LANG=COBOL,             *
+               STORAGE=AUTO,CTRL=FREEKB,TERM=3270-2,                   *
+               MAPATTS=(COLOR,HILIGHT),DSATTS=(COLOR,HILIGHT)
+MNUMAP  DFHMDI SIZE=(24,80),MAPATTS=(COLOR,HILIGHT),                   *
+               DSATTS=(COLOR,HILIGHT)
+*
+* Main menu title text
+        DFHMDF POS=(4,35),LENGTH=9,                                    *
+               INITIAL='MAIN MENU',ATTRB=(ASKIP,BRT),COLOR=PINK
+        DFHMDF POS=(5,35),LENGTH=9,                                    *
+               INITIAL='=========',ATTRB=(ASKIP,BRT),COLOR=PINK
+*
+* Body content - displays the users choices
+        DFHMDF POS=(8,20),ATTRB=ASKIP,LENGTH=34,                       *
+               INITIAL='CHOICE 1 OR F1 - ENTER NEW STUDENT',COLOR=BLUE       
+        DFHMDF POS=(10,20),ATTRB=ASKIP,LENGTH=42,                      *
+               INITIAL='CHOICE 2 OR F2 - INQUIRE BY STUDENT NUMBER',   *
+               COLOR=YELLOW
+        DFHMDF POS=(12,20),ATTRB=ASKIP,LENGTH=27,                      *
+               INITIAL='CHOICE 3 OR F3 - CHANGE OR ',COLOR=GREEN
+        DFHMDF POS=(12,48),ATTRB=ASKIP,LENGTH=23,                      *
+               INITIAL='DELETE EXISTING STUDENT',COLOR=GREEN
+        DFHMDF POS=(14,20),ATTRB=ASKIP,LENGTH=39,                      *
+               INITIAL='CHOICE 4 OR F4 - SEARCH BY STUDENT NAME',      *
+               COLOR=TURQUOISE
+        DFHMDF POS=(16,20),ATTRB=ASKIP,LENGTH=33,                      *
+               INITIAL='CHOICE 9 OR F9 - EXIT THIS SCREEN',COLOR=PINK
+*
+* Users choice input 
+        DFHMDF POS=(18,20),ATTRB=ASKIP,LENGTH=26,                      *
+               INITIAL='ENTER YOUR CHOICE HERE  : ',COLOR=NEUTRAL
+CHOICE  DFHMDF POS=(18,47),ATTRB=(UNPROT,FSET,IC),LENGTH=1
+        DFHMDF POS=(18,49),ATTRB=ASKIP,LENGTH=1
+*
+* Output result
+OUTMSG  DFHMDF POS=(21,20),ATTRB=ASKIP,LENGTH=40,COLOR=RED
+*
+        DFHMSD TYPE=FINAL
+        END 

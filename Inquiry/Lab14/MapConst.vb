@@ -1,0 +1,29 @@
+﻿Module MapConst
+    ' IAEMAPMap constants
+    Public Const IAEMAP = "0.54.83.163.107.187.349.366.374.500.517.521.526.531.597.601.606.611.677.681.686.691.757.761.766.771.837.841.846.851.983.1001.1022.1149.1161.1182.1241.1262.1321.1342.1401.1405.1409.1549.1557.1560.1564.1568.1572.1576.1581.1699.1852.1855.1875.1895"
+    Public Const IAEMAP_MTITLE = 107
+    Public Const IAEMAP_UTITLE = 187
+    Public Const IAEMAP_STUNUM = 366
+    Public Const IAEMAP_CCOD11 = 521
+    Public Const IAEMAP_CCOD12 = 526
+    Public Const IAEMAP_CCOD21 = 601
+    Public Const IAEMAP_CCOD22 = 606
+    Public Const IAEMAP_CCOD31 = 681
+    Public Const IAEMAP_CCOD32 = 686
+    Public Const IAEMAP_CCOD41 = 761
+    Public Const IAEMAP_CCOD42 = 766
+    Public Const IAEMAP_CCOD51 = 841
+    Public Const IAEMAP_CCOD52 = 846
+    Public Const IAEMAP_STUNAM = 1001
+    Public Const IAEMAP_ADDR01 = 1161
+    Public Const IAEMAP_ADDR02 = 1241
+    Public Const IAEMAP_ADDR03 = 1321
+    Public Const IAEMAP_POSCO1 = 1401
+    Public Const IAEMAP_POSCO2 = 1405
+    Public Const IAEMAP_AREACO = 1560
+    Public Const IAEMAP_EXCHCO = 1568
+    Public Const IAEMAP_PHONUM = 1576
+    Public Const IAEMAP_OUTMSG = 1699
+    Public Const IAEMAP_FUNKEY = 1852
+    Public Const IAEMAP_UPTILE = 1895
+End Module
